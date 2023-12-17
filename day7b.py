@@ -129,11 +129,11 @@ for line in readings:
 sorted_list_asc = sorted(diclist, key=lambda x: x['compscore'], reverse=False)
 # print(sorted_list_asc)
 
-# Open the file in write mode
-with open("C:\\Users\\TylerMueller\\Documents\\7test.txt", 'w') as file:
+# write sorted list to file for troubleshooting
+# with open("C:\\Users\\TylerMueller\\Documents\\7test.txt", 'w') as file:
     # Iterate over the list of dictionaries and write values to the file
-    for dic in sorted_list_asc:
-        file.write(f"hand: {dic['hand']}, compscore: {dic['compscore']}, hand type: {dic['hand_type']}\n")
+    # for dic in sorted_list_asc:
+        # file.write(f"hand: {dic['hand']}, compscore: {dic['compscore']}, hand type: {dic['hand_type']}\n")
 
 # add up all the rank*bids
 for i in range(len(sorted_list_asc)):

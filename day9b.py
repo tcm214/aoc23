@@ -36,7 +36,4 @@ for line in readings:
     scorelist.append(subval)
 
 # add up the final subvals for each line
-total = 0
-for score in scorelist:
-    total += score
-print(total)
+print(sum(scorelist))
